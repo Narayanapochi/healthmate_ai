@@ -9,7 +9,7 @@ services:
     name: healthmate-web
     plan: free
     env: python
-    buildCommand: "./build.sh"
+    buildCommand: "bash build.sh"
     startCommand: "gunicorn healthmate_ai.wsgi:application"
     envVars:
       - key: DATABASE_URL
@@ -20,3 +20,5 @@ services:
         generateValue: true
       - key: WEB_CONCURRENCY
         value: 4
+      - key: PYTHON_VERSION
+        value: 3.11.9
