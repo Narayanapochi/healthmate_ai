@@ -20,8 +20,7 @@ db.sqlite3-journal
 local_settings.py
 
 # Machine Learning
-*.pkl
-machine_learning/model.pkl
+# (Removed so model.pkl is pushed to GitHub for Render)
 
 # VS Code / IDE
 .vscode/
